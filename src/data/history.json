@@ -1,0 +1,19 @@
+[
+  {
+    "role": "Automation Engineer",
+    "organisation": "Testrig Technologies",
+    "startDate": "Oct, 2022",
+    "endDate": "Present",
+    "experiences": ["Automated 90% Test Cases and Maintained framework for E-commerce PAAS Product", 
+    "Full Stack QA: Automation(Playwright), Load Testing, Integration tests for IAAS Software"],
+    "imageSrc": "https://www.testrigtechnologies.com/wp-content/uploads/2023/03/Testrig-logo-white.svg"
+  },
+  {
+    "role": "Java Intern",
+    "organisation": "Magical Umbrella",
+    "startDate": "June, 2022",
+    "endDate": "Aug, 2022",
+    "experiences": ["Worked on Student Enrollment Managment System Backend", "Maintained DB Utils"],
+    "imageSrc": "https://scontent.fpnq1-3.fna.fbcdn.net/v/t39.30808-1/274879686_130426649509960_5628222052455400806_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mLaV87A-x60Q7kNvgHWiB7Z&_nc_ht=scontent.fpnq1-3.fna&oh=00_AYB-bFlkox_HRdrnS07rmoJnFcyyune2M5_PTmjoFzTTgQ&oe=66763384"
+  }
+]

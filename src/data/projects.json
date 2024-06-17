@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Selenium-Java Test Automation Framwork",
+    "imageSrc": "projects/project.png",
+    "description": "Built Selenium Test Automation framework POC",
+    "skills": ["Selenium", "Java"],
+    "demo": "https://github.com/bitwisebro/OrangeHRM-Selenium-POC",
+    "source": "https://github.com/bitwisebro/OrangeHRM-Selenium-POC"
+  },
+  {
+    "title": "Telegram Chatbot",
+    "imageSrc": "projects/project.png",
+    "description": "Final Year College Project: Telegram Bot which consumes various API",
+    "skills": ["Java", "Bash", "API"],
+    "demo": "https://github.com/bitwisebro/VidurBot",
+    "source": "https://github.com/bitwisebro/VidurBot"
+  },
+  {
+    "title": "Termux App Styling Setup CLI",
+    "imageSrc": "projects/project.png",
+    "description": "This script installs termux styling packages easily",
+    "skills": ["Bash/Shell", "Linux"],
+    "demo": "https://github.com/bitwisebro/My-Termux-Styling",
+    "source": "https://github.com/bitwisebro/My-Termux-Styling"
+  }
+]
