@@ -1,92 +1,287 @@
 @import "../../vars.css";
 
-.container {
+.aboutSection {
   position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 6rem 1.5rem;
+  background: rgba(11, 16, 27, 0.4);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sectionTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-.aboutImage {
-  width: 35%;
+.grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2.5rem;
+  align-items: stretch;
 }
 
-.aboutItems {
-  color: var(--color-text);
+/* Profile Card */
+.profileCard {
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 2.25rem;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
 }
 
-.aboutItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
-}
 
-.aboutItem:hover {
-  background-size: 100% 100%;
-}
-
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.aboutItem p {
-  font-size: 25px;
-}
-
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+  .profileCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-cyan) 100%);
   }
 
-  .content {
-    flex-direction: column;
+  .profileCard:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
 
-  .aboutImage {
-    display: none;
+  .profileHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
   }
 
-  .aboutItems {
-    margin-top: 29px;
+  .avatarGlow {
+    position: relative;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+  .avatarGlow::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-cyan) 100%);
+    opacity: 0.7;
+    filter: blur(4px);
   }
-}
+
+  .avatar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: #090e18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .avatarText {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #fff;
+    background: linear-gradient(135deg, #818cf8 0%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profileName {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .profileHandle {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--color-primary-light);
+      margin-top: 0.1rem;
+    }
+
+    .profileRoleBadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #38bdf8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-top: 0.4rem;
+    }
+
+
+      .profileBio {
+        color: var(--color-text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.65;
+      }
+
+
+        .metaList {
+          display: flex;
+          flex-direction: column;
+          gap: 0.85rem;
+          padding: 1.25rem 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.06);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+          .metaItem {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.88rem;
+            color: var(--color-text-secondary);
+          }
+
+
+            .metaItem svg {
+              color: var(--color-primary-light);
+              flex-shrink: 0;
+            }
+
+
+              .cardFooter {
+                display: flex;
+                align-items: center;
+                gap: 0.85rem;
+              }
+
+
+                .socialLink {
+                  display: flex;
+                  align-items: center;
+                  gap: 0.45rem;
+                  padding: 0.55rem 0.9rem;
+                  border-radius: 10px;
+                  background: rgba(255, 255, 255, 0.04);
+                  border: 1px solid var(--color-border);
+                  color: var(--color-text-secondary);
+                  font-size: 0.85rem;
+                  font-weight: 500;
+                  transition: all var(--transition-fast);
+                  text-decoration: none;
+                }
+
+
+                  .socialLink:hover {
+                    background: rgba(255, 255, 255, 0.08);
+                    border-color: var(--color-primary-light);
+                    color: #fff;
+                    transform: translateY(-2px);
+                  }
+
+                  /* Right Column Pillars */
+                  .pillarsGrid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1.25rem;
+                  }
+
+                  .pillarCard {
+                    background: var(--color-surface-card);
+                    border: 1px solid var(--color-border);
+                    border-radius: 16px;
+                    padding: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.85rem;
+                    transition: all var(--transition-normal);
+                  }
+
+                    .pillarCard:hover {
+                      border-color: rgba(255, 255, 255, 0.16);
+                      transform: translateY(-3px);
+                      background: rgba(18, 25, 42, 0.8);
+                    }
+
+                    .pillarIcon {
+                      width: 44px;
+                      height: 44px;
+                      border-radius: 12px;
+                      border: 1px solid;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    }
+
+                    .pillarTitle {
+                      font-size: 1.05rem;
+                      font-weight: 700;
+                      color: #fff;
+                    }
+
+                    .pillarDesc {
+                      color: var(--color-text-secondary);
+                      font-size: 0.88rem;
+                      line-height: 1.55;
+                    }
+
+                    @media screen and (max-width: 960px) {
+                      .grid {
+                        grid-template-columns: 1fr;
+                        gap: 2rem;
+                      }
+
+                        .pillarsGrid {
+                          grid-template-columns: 1fr;
+                        }
+                      }

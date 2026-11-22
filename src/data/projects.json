@@ -1,26 +1,159 @@
 [
   {
-    "title": "Selenium-Java Test Automation Framwork",
-    "imageSrc": "projects/project.png",
-    "description": "Built Selenium Test Automation framework POC",
-    "skills": ["Selenium", "Java"],
+    "title": "Serverless Telegram Bot",
+    "category": "Backend",
+    "description": "Event-driven, serverless Telegram bot leveraging cloud functions and webhooks for real-time messaging, zero idle compute costs, and automated serverless workflows.",
+    "highlights": [
+      "Serverless architecture deploying on cloud functions with instant cold-start",
+      "Telegram Webhook dispatching for high throughput event handling",
+      "Modular command routing, async handlers, and secure token lifecycle"
+    ],
+    "skills": [
+      "Serverless",
+      "Cloud Functions",
+      "Telegram Bot API",
+      "Node.js",
+      "Webhooks"
+    ],
+    "demo": "https://github.com/bitwisebro/Serverless-Telegram-Bot",
+    "source": "https://github.com/bitwisebro/Serverless-Telegram-Bot",
+    "badge": "Serverless Cloud"
+  },
+  {
+    "title": "Playwright Modern E2E & API Test Harness",
+    "category": "Automation",
+    "description": "High-velocity test automation suite demonstrating modern end-to-end testing, network interception, visual regression, and API contract assertions.",
+    "highlights": [
+      "Parallel multi-worker execution across Chromium, Firefox & WebKit",
+      "Network mocking, auth state reuse, and API stubbing",
+      "Zero-config GitHub Actions CI workflow integration"
+    ],
+    "skills": [
+      "Playwright",
+      "TypeScript",
+      "Node.js",
+      "CI/CD",
+      "Docker"
+    ],
+    "demo": "https://github.com/bitwisebro",
+    "source": "https://github.com/bitwisebro",
+    "badge": "Modern Testing"
+  },
+  {
+    "title": "Selenium-Java Test Automation Framework",
+    "category": "Automation",
+    "description": "Enterprise-grade Page Object Model (POM) test automation framework POC for web applications with data-driven testing, custom listeners, and robust reporting.",
+    "highlights": [
+      "Page Object Model architecture with PageFactory",
+      "Data-driven testing via Apache POI & Excel integration",
+      "Rich ExtentReports generation with automatic failure screenshots",
+      "Configurable cross-browser test runner (Chrome, Firefox, Edge)"
+    ],
+    "skills": [
+      "Java",
+      "Selenium WebDriver",
+      "TestNG",
+      "Maven",
+      "POM"
+    ],
     "demo": "https://github.com/bitwisebro/OrangeHRM-Selenium-POC",
-    "source": "https://github.com/bitwisebro/OrangeHRM-Selenium-POC"
+    "source": "https://github.com/bitwisebro/OrangeHRM-Selenium-POC",
+    "badge": "Enterprise Framework"
   },
   {
-    "title": "Telegram Chatbot",
-    "imageSrc": "projects/project.png",
-    "description": "Final Year College Project: Telegram Bot which consumes various API",
-    "skills": ["Java", "Bash", "API"],
-    "demo": "https://github.com/bitwisebro/VidurBot",
-    "source": "https://github.com/bitwisebro/VidurBot"
+    "title": "HandleHunt",
+    "category": "Tools",
+    "description": "High-speed developer and branding tool to search, check, and track username and handle availability across major social platforms, code repos, and digital domains.",
+    "highlights": [
+      "Asynchronous concurrent requests querying multiple platforms simultaneously",
+      "Instant status code evaluation, response parsing, and rate-limit handling",
+      "Clean CLI and web-ready interface for rapid handle discovery"
+    ],
+    "skills": [
+      "JavaScript",
+      "Async Concurrency",
+      "REST APIs",
+      "OSINT / Tooling"
+    ],
+    "demo": "https://github.com/bitwisebro/handlehunt",
+    "source": "https://github.com/bitwisebro/handlehunt",
+    "badge": "Handle Intelligence"
   },
   {
-    "title": "Termux App Styling Setup CLI",
-    "imageSrc": "projects/project.png",
-    "description": "This script installs termux styling packages easily",
-    "skills": ["Bash/Shell", "Linux"],
+    "title": "Termux App Styling Setup & Linux CLI Tool",
+    "category": "Tools",
+    "description": "Interactive Bash CLI automation utility that configures terminal styling, custom zsh/bash prompts, and essential developer tooling in Linux/Android environments.",
+    "highlights": [
+      "Zero-dependency bash installation script with interactive TUI",
+      "Automated font downloading, color palettes, and terminal dotfiles",
+      "Widely used and starred by open-source developers worldwide"
+    ],
+    "skills": [
+      "Bash/Shell",
+      "Linux",
+      "CLI Tooling",
+      "Automation"
+    ],
     "demo": "https://github.com/bitwisebro/My-Termux-Styling",
-    "source": "https://github.com/bitwisebro/My-Termux-Styling"
+    "source": "https://github.com/bitwisebro/My-Termux-Styling",
+    "badge": "Open Source CLI"
+  },
+  {
+    "title": "Ramayana REST API",
+    "category": "Backend",
+    "description": "Structured RESTful API service providing organized access to Kandas, Sargas, characters, and verse data from the epic Ramayana with advanced filtering and search.",
+    "highlights": [
+      "Comprehensive REST API schema with standardized JSON responses",
+      "Hierarchical data indexing by Kanda, chapter, and character entities",
+      "High-performance caching and developer-ready query endpoints"
+    ],
+    "skills": [
+      "REST APIs",
+      "Node.js / Express",
+      "JSON Architecture",
+      "API Design"
+    ],
+    "demo": "https://github.com/bitwisebro/ramayana-api",
+    "source": "https://github.com/bitwisebro/ramayana-api",
+    "badge": "Public REST API"
+  },
+  {
+    "title": "Marathi Shabdakosh",
+    "category": "Backend",
+    "description": "Digital lexicon engine and dictionary service for Marathi vocabulary, word definitions, synonyms, and translations with fast search and phonetic lookup.",
+    "highlights": [
+      "Fast Devanagari script text indexing and fuzzy keyword search",
+      "Structured API endpoints serving definitions, synonyms, and parts of speech",
+      "Open-source linguistic asset built to empower regional language applications"
+    ],
+    "skills": [
+      "REST APIs",
+      "Lexical Analysis",
+      "Node.js / Python",
+      "JSON Data Engine"
+    ],
+    "demo": "https://github.com/bitwisebro/Marathi-Shabdakosh",
+    "source": "https://github.com/bitwisebro/Marathi-Shabdakosh",
+    "badge": "Lexical Engine"
+  },
+  {
+    "title": "VidurBot - Telegram Multi-Service Bot",
+    "category": "Backend",
+    "description": "Multi-threaded Java Telegram bot consuming external REST APIs to provide automated developer utilities, alerts, and instant real-time data services.",
+    "highlights": [
+      "Multi-threaded non-blocking polling and command routing",
+      "REST API integrations with JSON payload serialization",
+      "Built-in error telemetry, rate-limiting, and graceful recovery"
+    ],
+    "skills": [
+      "Java",
+      "REST APIs",
+      "Telegram Bot API",
+      "JSON",
+      "Bash"
+    ],
+    "demo": "https://github.com/bitwisebro/VidurBot",
+    "source": "https://github.com/bitwisebro/VidurBot",
+    "badge": "Backend Service"
   }
 ]

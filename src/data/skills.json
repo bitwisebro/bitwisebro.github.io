@@ -1,46 +1,149 @@
 [
   {
-    "title": "Selenium",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png"
+    "name": "Playwright",
+    "category": "Automation & QA",
+    "icon": "Playwright",
+    "level": "Advanced",
+    "tag": "E2E & API"
   },
   {
-    "title": "Playwright",
-    "imageSrc": "https://github.com/marwin1991/profile-technology-icons/assets/25181517/37cb517e-d059-4cc0-8124-1a72b663167c"
+    "name": "Selenium",
+    "category": "Automation & QA",
+    "icon": "Selenium",
+    "level": "Advanced",
+    "tag": "Web Automation"
   },
   {
-    "title": "Java",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png"
+    "name": "Cypress",
+    "category": "Automation & QA",
+    "icon": "Playwright",
+    "level": "Advanced",
+    "tag": "Frontend Testing"
   },
   {
-    "title": "JavaScript",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"
+    "name": "Appium",
+    "category": "Automation & QA",
+    "icon": "Appium",
+    "level": "Proficient",
+    "tag": "Mobile QA"
   },
   {
-    "title": "Node",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"
+    "name": "k6",
+    "category": "Automation & QA",
+    "icon": "K6",
+    "level": "Proficient",
+    "tag": "Load & Perf"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png"
+    "name": "Postman",
+    "category": "Automation & QA",
+    "icon": "Postman",
+    "level": "Advanced",
+    "tag": "API Testing"
   },
   {
-    "title": "React",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png"
+    "name": "Java",
+    "category": "Languages & Core",
+    "icon": "Java",
+    "level": "Advanced",
+    "tag": "OOP & Frameworks"
   },
   {
-    "title": "Postman",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png"
+    "name": "JavaScript",
+    "category": "Languages & Core",
+    "icon": "JavaScript",
+    "level": "Advanced",
+    "tag": "ES6+ & Async"
   },
   {
-    "title": "Jira",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/183912952-83784e94-629d-4c34-a961-ae2ae795b662.png"
+    "name": "TypeScript",
+    "category": "Languages & Core",
+    "icon": "TypeScript",
+    "level": "Advanced",
+    "tag": "Type-Safe Automation"
   },
   {
-    "title": "Git",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
+    "name": "Bash & Shell",
+    "category": "Languages & Core",
+    "icon": "Bash",
+    "level": "Advanced",
+    "tag": "CLI & Scripting"
   },
   {
-    "title": "REST",
-    "imageSrc": "https://user-images.githubusercontent.com/25181517/192107858-fe19f043-c502-4009-8c47-476fc89718ad.png"
+    "name": "Python",
+    "category": "Languages & Core",
+    "icon": "Python",
+    "level": "Proficient",
+    "tag": "Automation & Scripts"
+  },
+  {
+    "name": "Node.js",
+    "category": "Languages & Core",
+    "icon": "Node",
+    "level": "Proficient",
+    "tag": "Backend & Tools"
+  },
+  {
+    "name": "React",
+    "category": "Web & Frontend",
+    "icon": "React",
+    "level": "Proficient",
+    "tag": "SPA & UI"
+  },
+  {
+    "name": "Git & GitHub",
+    "category": "DevOps & Cloud",
+    "icon": "Git",
+    "level": "Advanced",
+    "tag": "Version Control"
+  },
+  {
+    "name": "CI/CD & Actions",
+    "category": "DevOps & Cloud",
+    "icon": "Layers",
+    "level": "Advanced",
+    "tag": "Pipelines"
+  },
+  {
+    "name": "Docker & Podman",
+    "category": "DevOps & Cloud",
+    "icon": "Docker",
+    "level": "Advanced",
+    "tag": "Mock Containers"
+  },
+  {
+    "name": "AWS",
+    "category": "DevOps & Cloud",
+    "icon": "AWS",
+    "level": "Proficient",
+    "tag": "Cloud Infra"
+  },
+  {
+    "name": "MongoDB",
+    "category": "Databases",
+    "icon": "MongoDB",
+    "level": "Proficient",
+    "tag": "NoSQL"
+  },
+  {
+    "name": "MySQL",
+    "category": "Databases",
+    "icon": "MySQL",
+    "level": "Proficient",
+    "tag": "Relational DB"
+  },
+  {
+    "name": "Jira",
+    "category": "Tools & Workflow",
+    "icon": "Jira",
+    "level": "Advanced",
+    "tag": "Agile & Triage"
+  },
+  {
+    "name": "Linux",
+    "category": "Tools & Workflow",
+    "icon": "Linux",
+    "level": "Advanced",
+    "tag": "OS & CLI"
   }
 ]
