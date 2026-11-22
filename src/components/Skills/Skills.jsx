@@ -5,20 +5,36 @@ import { Icon } from "../common/Icons";
 
 export const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const categories = [
     "All",
-    "Automation & QA",
     "Languages & Core",
+    "Automation & QA",
     "DevOps & Cloud",
     "Databases",
     "Tools & Workflow",
   ];
 
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    setIsExpanded(false);
+  };
+
   const filteredSkills =
     selectedCategory === "All"
       ? skillsData
       : skillsData.filter((skill) => skill.category === selectedCategory);
+
+  const INITIAL_COUNT = 8;
+  const visibleSkills = isExpanded ? filteredSkills : filteredSkills.slice(0, INITIAL_COUNT);
+  const canToggle = filteredSkills.length > INITIAL_COUNT;
+
+  const getLevelBadgeClass = (level) => {
+    if (level === "Advanced") return styles.levelAdvanced;
+    if (level === "Beginner") return styles.levelBeginner;
+    return styles.levelProficient;
+  };
 
   return (
     <section className={styles.skillsSection} id="skills">
@@ -40,7 +56,7 @@ export const Skills = () => {
               <button
                 key={category}
                 className={`${styles.filterBtn} ${selectedCategory === category ? styles.filterActive : ""}`}
-                onClick={() => setSelectedCategory(category)}
+                onClick={() => handleCategorySelect(category)}
               >
                 {category}
               </button>
@@ -50,7 +66,7 @@ export const Skills = () => {
 
         {/* Skills Grid */}
         <div className={styles.skillsGrid}>
-          {filteredSkills.map((skill, idx) => (
+          {visibleSkills.map((skill, idx) => (
             <div key={idx} className={styles.skillCard}>
               <div className={styles.skillIconWrapper}>
                 <Icon name={skill.icon} size={28} />
@@ -58,7 +74,7 @@ export const Skills = () => {
               <div className={styles.skillDetails}>
                 <div className={styles.skillHeader}>
                   <h4 className={styles.skillName}>{skill.name}</h4>
-                  <span className={`${styles.levelBadge} ${skill.level === "Advanced" ? styles.levelAdvanced : styles.levelProficient}`}>
+                  <span className={`${styles.levelBadge} ${getLevelBadgeClass(skill.level)}`}>
                     {skill.level}
                   </span>
                 </div>
@@ -69,6 +85,24 @@ export const Skills = () => {
             </div>
           ))}
         </div>
+
+        {/* Expand / Collapse Toggle Button */}
+        {canToggle && (
+          <div className={styles.toggleWrapper}>
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className={styles.toggleBtn}
+              aria-expanded={isExpanded}
+            >
+              <span>
+                {isExpanded
+                  ? "Show Fewer Skills"
+                  : `Show All Skills (${filteredSkills.length})`}
+              </span>
+              <Icon name={isExpanded ? "ChevronUp" : "ChevronDown"} size={16} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

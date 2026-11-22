@@ -6,13 +6,23 @@ import { Icon } from "../common/Icons";
 
 export const Projects = () => {
   const [filter, setFilter] = useState("All");
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const categories = ["All", "Automation", "Backend", "Tools"];
+
+  const handleFilterSelect = (cat) => {
+    setFilter(cat);
+    setIsExpanded(false);
+  };
 
   const filteredProjects =
     filter === "All"
       ? projectsData
       : projectsData.filter((p) => p.category === filter);
+
+  const INITIAL_COUNT = 4;
+  const visibleProjects = isExpanded ? filteredProjects : filteredProjects.slice(0, INITIAL_COUNT);
+  const canToggle = filteredProjects.length > INITIAL_COUNT;
 
   return (
         <section className={styles.projectsSection} id="projects">
@@ -34,7 +44,7 @@ export const Projects = () => {
                   <button
                     key={cat}
                     className={`${styles.filterBtn} ${filter === cat ? styles.filterActive : ""}`}
-                    onClick={() => setFilter(cat)}
+                    onClick={() => handleFilterSelect(cat)}
                   >
                     {cat}
                   </button>
@@ -44,10 +54,28 @@ export const Projects = () => {
 
             {/* Projects Grid */}
             <div className={styles.grid}>
-              {filteredProjects.map((project, idx) => (
+              {visibleProjects.map((project, idx) => (
                 <ProjectCard key={idx} project={project} />
               ))}
             </div>
+
+            {/* Expand / Collapse Toggle Button */}
+            {canToggle && (
+              <div className={styles.toggleWrapper}>
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className={styles.toggleBtn}
+                  aria-expanded={isExpanded}
+                >
+                  <span>
+                    {isExpanded
+                      ? "Show Fewer Projects"
+                      : `Show All Projects (${filteredProjects.length})`}
+                  </span>
+                  <Icon name={isExpanded ? "ChevronUp" : "ChevronDown"} size={16} />
+                </button>
+              </div>
+            )}
 
             {/* GitHub Callout Footer */}
             <div className={styles.githubCallout}>

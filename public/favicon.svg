@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="slashGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)" />
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.25" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.8" />
+
+  <!-- Code brackets < / > -->
+  <!-- Left bracket < -->
+  <polyline points="10.5 10 5.5 16 10.5 22" fill="none" stroke="#06b6d4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Center Slash / -->
+  <line x1="18.5" y1="9" x2="13.5" y2="23" stroke="url(#slashGrad)" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Right bracket > -->
+  <polyline points="21.5 10 26.5 16 21.5 22" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Active Status Indicator Dot (matches navbar online dot) -->
+  <circle cx="26" cy="6" r="2.2" fill="#10b981" />
+  <circle cx="26" cy="6" r="2.2" fill="none" stroke="#090d16" stroke-width="0.8" />
+</svg>
