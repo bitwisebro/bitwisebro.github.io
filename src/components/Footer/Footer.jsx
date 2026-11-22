@@ -41,14 +41,6 @@ export const Footer = () => {
 
           <div className={styles.socialLinks}>
             <a
-              href="https://github.com/bitwisebro"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <Icon name="GitHub" size={18} />
-            </a>
-            <a
               href="https://www.linkedin.com/in/bitwisebro"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,10 +49,12 @@ export const Footer = () => {
               <Icon name="LinkedIn" size={18} />
             </a>
             <a
-              href="mailto:gauravjani207@yahoo.com"
-              aria-label="Email"
+              href="https://github.com/bitwisebro"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <Icon name="Mail" size={18} />
+              <Icon name="GitHub" size={18} />
             </a>
           </div>
         </div>

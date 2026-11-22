@@ -1,30 +1,55 @@
 [
   {
-    "role": "Automation Engineer / SDET",
-    "organisation": "Testrig Technologies",
+    "role": "SDET - II",
+    "organisation": "Diligent",
     "type": "Full-Time",
-    "location": "Pune, India (Hybrid)",
-    "startDate": "Oct 2022",
+    "location": "Bengaluru, Karnataka, India",
+    "startDate": "Jan 2025",
     "endDate": "Present",
     "experiences": [
-      "Architected and maintained end-to-end automated test suites achieving 90%+ regression coverage for an enterprise E-Commerce PaaS platform.",
-      "Engineered comprehensive Full-Stack QA framework using Playwright (TypeScript/JavaScript), Selenium WebDriver (Java), and Appium for cross-platform validation.",
-      "Conducted load and stress testing using k6 and JMeter for IaaS/PaaS cloud infrastructure, identifying high-concurrency memory leaks and latency bottlenecks.",
-      "Developed service virtualization and mock servers to isolate independent microservices, reducing flaky tests and cutting CI build runtimes by 35%.",
-      "Integrated automated regression test suites into GitHub Actions CI/CD pipelines with automated test reporting and triage notifications."
+      "Promoted to SDET - II (Oct 2026), leading test automation architecture and quality initiatives across enterprise governance platforms.",
+      "Architected and implemented a high-efficiency Hybrid Test Automation Framework from scratch with Playwright and TypeScript.",
+      "Engineered Dockerized API mocks and service virtualization, reducing test execution times and isolating microservice dependencies.",
+      "Implemented robust CI/CD quality gates and automated regression testing workflows using GitHub Actions.",
+      "Spearheaded technical tool POCs, established automation best practices, and mentored engineering teams on scalable test design."
     ],
     "skills": [
       "Playwright",
-      "Selenium",
-      "Java",
       "TypeScript",
+      "Java",
+      "Docker",
+      "GitHub Actions",
+      "MongoDB",
+      "API Testing",
+      "CI/CD"
+    ],
+    "badge": "Current"
+  },
+  {
+    "role": "Automation Engineer",
+    "organisation": "Testrig Technologies",
+    "type": "Full-Time",
+    "location": "Pune, Maharashtra, India",
+    "startDate": "Oct 2022",
+    "endDate": "Jan 2025",
+    "experiences": [
+      "Delivered impactful automation testing solutions for enterprise clients and major brands including Ribbon and AIRR Labs.",
+      "Architected and maintained end-to-end automated test suites achieving 90%+ regression coverage for an enterprise E-Commerce PaaS product.",
+      "Engineered comprehensive full-stack QA frameworks using Selenium WebDriver (Java), Playwright, and Appium for cross-browser and cross-platform validation.",
+      "Conducted load and stress testing using k6 and JMeter for IaaS/PaaS cloud infrastructure, identifying concurrency memory leaks and latency bottlenecks.",
+      "Integrated automated regression runs into CI/CD deployment pipelines with automated failure analysis and Slack reporting."
+    ],
+    "skills": [
+      "Selenium",
+      "Playwright",
+      "Java",
       "k6",
       "Postman",
       "CI/CD",
       "AWS",
       "Jira"
     ],
-    "badge": "Current"
+    "badge": "2 yrs 4 mos"
   },
   {
     "role": "Java Software Engineer Intern",
@@ -35,7 +60,7 @@
     "endDate": "Aug 2022",
     "experiences": [
       "Contributed to core backend services for an enterprise Student Enrollment Management System using Java and Spring Boot.",
-      "Designed and optimized database utilities, stored procedures, and connection pooling in MySQL, improving data query throughput by 25%.",
+      "Designed and optimized database utilities, stored procedures, and connection pooling in MySQL, improving query throughput by 25%.",
       "Wrote unit tests and integration test suites, ensuring robust test coverage across critical student registration and grading workflows."
     ],
     "skills": [

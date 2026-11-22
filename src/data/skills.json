@@ -14,6 +14,13 @@
     "tag": "Web Automation"
   },
   {
+    "name": "Cypress",
+    "category": "Automation & QA",
+    "icon": "Playwright",
+    "level": "Advanced",
+    "tag": "Frontend Testing"
+  },
+  {
     "name": "Appium",
     "category": "Automation & QA",
     "icon": "Appium",
@@ -52,7 +59,7 @@
     "name": "TypeScript",
     "category": "Languages & Core",
     "icon": "TypeScript",
-    "level": "Proficient",
+    "level": "Advanced",
     "tag": "Type-Safe Automation"
   },
   {
@@ -101,8 +108,8 @@
     "name": "Docker & Podman",
     "category": "DevOps & Cloud",
     "icon": "Docker",
-    "level": "Proficient",
-    "tag": "Containers"
+    "level": "Advanced",
+    "tag": "Mock Containers"
   },
   {
     "name": "AWS",
