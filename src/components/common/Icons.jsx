@@ -354,6 +354,20 @@ export const Icon = ({ name, size = 20, className = "", color = "currentColor" }
         </svg>
       );
 
+    case "ChevronDown":
+      return (
+        <svg {...props} viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      );
+
+    case "ChevronUp":
+      return (
+        <svg {...props} viewBox="0 0 24 24">
+          <polyline points="18 15 12 9 6 15" />
+        </svg>
+      );
+
     case "Activity":
       return (
         <svg {...props} viewBox="0 0 24 24">
