@@ -10,146 +10,144 @@
   margin: 0 auto;
 }
 
+.sectionHeader {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-  .sectionHeader {
-    text-align: center;
-    max-width: 650px;
-    margin: 0 auto 3.5rem;
-    display: flex;
+.sectionTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-emerald);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 0.5rem 1.15rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.filterBtn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filterActive {
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px var(--color-primary-glow);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.75rem;
+}
+
+/* GitHub Callout */
+.githubCallout {
+  margin-top: 4rem;
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.calloutText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.calloutText h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.calloutText p {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+.calloutBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.75rem 1.35rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.calloutBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .githubCallout {
     flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 1.75rem;
   }
-
-  .sectionTag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--color-emerald);
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.25);
-    padding: 0.35rem 0.85rem;
-    border-radius: 100px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-
-    .title {
-      font-size: clamp(2rem, 3.5vw, 2.6rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-
-    .subtitle {
-      color: var(--color-text-secondary);
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-
-    .filterGroup {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .filterBtn {
-      padding: 0.5rem 1.15rem;
-      border-radius: 100px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--color-text-secondary);
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--color-border);
-      transition: all var(--transition-fast);
-    }
-
-    .filterBtn:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .filterActive {
-      color: #fff;
-      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 15px var(--color-primary-glow);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 1.75rem;
-    }
-
-    /* GitHub Callout */
-    .githubCallout {
-      margin-top: 4rem;
-      background: rgba(17, 24, 39, 0.6);
-      border: 1px solid var(--color-border);
-      border-radius: 18px;
-      padding: 2.25rem 2.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .calloutText {
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-    }
-
-    .calloutText h4 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .calloutText p {
-      color: var(--color-text-secondary);
-      font-size: 0.95rem;
-    }
-
-    .calloutBtn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #fff;
-      padding: 0.75rem 1.35rem;
-      border-radius: 12px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: all var(--transition-fast);
-      text-decoration: none;
-    }
-
-    .calloutBtn:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: var(--color-primary-light);
-      transform: translateY(-2px);
-    }
-
-    @media screen and (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .githubCallout {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1.75rem;
-      }
-    }
+}

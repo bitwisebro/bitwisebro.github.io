@@ -6,281 +6,307 @@
   background: rgba(11, 16, 27, 0.4);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
+.sectionHeader {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  .sectionHeader {
-    text-align: center;
-    max-width: 650px;
-    margin: 0 auto 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sectionTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #818cf8;
+  background: rgba(129, 140, 248, 0.1);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timelineMarker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.markerDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  border: 3px solid #090d16;
+  box-shadow: 0 0 14px var(--color-primary);
+  z-index: 2;
+  margin-top: 1.5rem;
+}
+
+.markerLine {
+  width: 2px;
+  flex-grow: 1;
+  background: linear-gradient(180deg, var(--color-primary-light) 0%, rgba(255, 255, 255, 0.06) 100%);
+  margin-top: 0.5rem;
+}
+
+/* Card */
+.card {
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  transition: all var(--transition-normal);
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.roleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.roleTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  word-break: break-word;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.companyName {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+
+.separator {
+  color: var(--color-text-muted);
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+}
+
+.badgeGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.dateBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+}
+
+.typeBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.65rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.typeFullTime {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.typeIntern {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* Bullet list */
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  width: 100%;
+}
+
+.experienceBullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.bulletCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.bulletText {
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+/* Tech stack pills */
+.techStack {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.techLabel {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.techPills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.techPill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text-secondary);
+}
+
+@media screen and (max-width: 640px) {
+  .experienceSection {
+    padding: 3.5rem 1rem;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 
-  .sectionTag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #818cf8;
-    background: rgba(129, 140, 248, 0.1);
-    border: 1px solid rgba(129, 140, 248, 0.25);
-    padding: 0.35rem 0.85rem;
-    border-radius: 100px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  .timelineMarker {
+    display: none;
   }
 
-    .title {
-      font-size: clamp(2rem, 3.5vw, 2.6rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
+  .card {
+    padding: 1.25rem 1rem;
+  }
 
-    .subtitle {
-      color: var(--color-text-secondary);
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
+  .roleTitle {
+    font-size: 1.15rem;
+  }
 
-    /* Timeline */
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      position: relative;
-    }
-
-      .timelineItem {
-        display: grid;
-        grid-template-columns: 36px 1fr;
-        gap: 1.5rem;
-      }
-
-      .timelineMarker {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-      }
-
-      .markerDot {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: var(--color-primary-light);
-        border: 3px solid #090d16;
-        box-shadow: 0 0 14px var(--color-primary);
-        z-index: 2;
-        margin-top: 1.5rem;
-      }
-
-      .markerLine {
-        width: 2px;
-        flex-grow: 1;
-        background: linear-gradient(180deg, var(--color-primary-light) 0%, rgba(255, 255, 255, 0.06) 100%);
-        margin-top: 0.5rem;
-      }
-
-      /* Card */
-      .card {
-        background: var(--color-surface-card);
-        border: 1px solid var(--color-border);
-        border-radius: 18px;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
-        transition: all var(--transition-normal);
-      }
-
-      .card:hover {
-        border-color: rgba(99, 102, 241, 0.3);
-        transform: translateY(-2px);
-        box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
-      }
-
-      .cardHeader {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-        .roleGroup {
-          display: flex;
-          flex-direction: column;
-          gap: 0.35rem;
-        }
-
-        .roleTitle {
-          font-size: 1.35rem;
-          font-weight: 700;
-          color: #fff;
-        }
-
-        .companyInfo {
-          display: flex;
-          align-items: center;
-          gap: 0.6rem;
-          font-size: 0.95rem;
-        }
-
-
-          .companyName {
-            color: var(--color-primary-light);
-            font-weight: 600;
-          }
-
-          .separator {
-            color: var(--color-text-muted);
-          }
-
-          .location {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            color: var(--color-text-secondary);
-            font-size: 0.85rem;
-          }
-
-          .badgeGroup {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            flex-wrap: wrap;
-          }
-
-            .dateBadge {
-              display: inline-flex;
-              align-items: center;
-              gap: 0.4rem;
-              background: rgba(255, 255, 255, 0.05);
-              border: 1px solid var(--color-border);
-              padding: 0.35rem 0.75rem;
-              border-radius: 100px;
-              font-family: var(--font-mono);
-              font-size: 0.78rem;
-              color: var(--color-text-secondary);
-            }
-
-
-              .typeBadge {
-                font-size: 0.72rem;
-                font-weight: 600;
-                padding: 0.3rem 0.65rem;
-                border-radius: 100px;
-                text-transform: uppercase;
-                letter-spacing: 0.04em;
-              }
-
-
-                .typeFullTime {
-                  background: rgba(16, 185, 129, 0.12);
-                  color: #34d399;
-                  border: 1px solid rgba(16, 185, 129, 0.25);
-                }
-
-                .typeIntern {
-                  background: rgba(56, 189, 248, 0.12);
-                  color: #38bdf8;
-                  border: 1px solid rgba(56, 189, 248, 0.25);
-                }
-
-                /* Bullet list */
-                .experienceList {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 0.75rem;
-                  list-style: none;
-                }
-
-                  .experienceBullet {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 0.75rem;
-                    font-size: 0.95rem;
-                    line-height: 1.6;
-                    color: var(--color-text-secondary);
-                  }
-
-                  .bulletCheck {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    background: rgba(99, 102, 241, 0.15);
-                    color: var(--color-primary-light);
-                    flex-shrink: 0;
-                    margin-top: 0.2rem;
-                  }
-
-
-                    .bulletText {
-                      flex-grow: 1;
-                    }
-
-                      /* Tech stack pills */
-                      .techStack {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.85rem;
-                        padding-top: 1rem;
-                        border-top: 1px solid rgba(255, 255, 255, 0.06);
-                        flex-wrap: wrap;
-                      }
-
-                        .techLabel {
-                          font-size: 0.82rem;
-                          color: var(--color-text-muted);
-                          font-weight: 600;
-                        }
-
-
-                          .techPills {
-                            display: flex;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            gap: 0.45rem;
-                          }
-
-
-                            .techPill {
-                              font-family: var(--font-mono);
-                              font-size: 0.75rem;
-                              padding: 0.2rem 0.6rem;
-                              background: rgba(255, 255, 255, 0.04);
-                              border: 1px solid var(--color-border);
-                              border-radius: 6px;
-                              color: var(--color-text-secondary);
-                            }
-
-                                @media screen and (max-width: 640px) {
-                                  .timelineItem {
-                                    grid-template-columns: 1fr;
-                                  }
-
-
-                                    .timelineMarker {
-                                      display: none;
-                                    }
-
-
-                                      .card {
-                                        padding: 1.5rem;
-                                      }
-                                    }
+  .experienceBullet {
+    font-size: 0.88rem;
+  }
+}

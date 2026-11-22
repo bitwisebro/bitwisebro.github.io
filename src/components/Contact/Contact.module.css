@@ -3,11 +3,17 @@
 .contactSection {
   position: relative;
   padding: 6rem 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contentCard {
@@ -24,6 +30,8 @@
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.5),
     0 0 50px rgba(99, 102, 241, 0.08);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .glowSpot {
@@ -31,7 +39,7 @@
   top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
+  width: min(400px, 90vw);
   height: 250px;
   background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%);
   filter: blur(60px);
@@ -44,6 +52,8 @@
   align-items: center;
   gap: 1rem;
   max-width: 650px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .sectionTag {
@@ -81,6 +91,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .linkedinPrimaryBtn {
@@ -97,6 +108,8 @@
   box-shadow: 0 8px 30px rgba(10, 102, 194, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all var(--transition-normal);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .linkedinPrimaryBtn:hover {
@@ -112,6 +125,7 @@
   gap: 1.25rem;
   width: 100%;
   max-width: 650px;
+  box-sizing: border-box;
 }
 
 .socialCard {
@@ -125,6 +139,8 @@
   text-decoration: none;
   transition: all var(--transition-normal);
   text-align: left;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .socialCard:hover {
@@ -151,6 +167,7 @@
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
+  min-width: 0;
 }
 
 .socialPlatform {
@@ -181,11 +198,23 @@
 }
 
 @media screen and (max-width: 700px) {
+  .contactSection {
+    padding: 3.5rem 1rem;
+  }
+
   .contentCard {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1.15rem;
+  }
+
+  .linkedinPrimaryBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
   }
 
   .socialGrid {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
 }
