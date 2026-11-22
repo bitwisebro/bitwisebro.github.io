@@ -1,5 +1,47 @@
 [
   {
+    "name": "Java",
+    "category": "Languages & Core",
+    "icon": "Java",
+    "level": "Proficient",
+    "tag": "OOP & Frameworks"
+  },
+  {
+    "name": "TypeScript",
+    "category": "Languages & Core",
+    "icon": "TypeScript",
+    "level": "Proficient",
+    "tag": "Type-Safe Automation"
+  },
+  {
+    "name": "JavaScript",
+    "category": "Languages & Core",
+    "icon": "JavaScript",
+    "level": "Proficient",
+    "tag": "ES6+ & Async"
+  },
+  {
+    "name": "Python",
+    "category": "Languages & Core",
+    "icon": "Python",
+    "level": "Beginner",
+    "tag": "Automation & Scripts"
+  },
+  {
+    "name": "Bash & Shell",
+    "category": "Languages & Core",
+    "icon": "Bash",
+    "level": "Advanced",
+    "tag": "CLI & Scripting"
+  },
+  {
+    "name": "Node.js",
+    "category": "Languages & Core",
+    "icon": "Node",
+    "level": "Proficient",
+    "tag": "Backend & Tools"
+  },
+  {
     "name": "Playwright",
     "category": "Automation & QA",
     "icon": "Playwright",
@@ -42,60 +84,11 @@
     "tag": "API Testing"
   },
   {
-    "name": "Java",
-    "category": "Languages & Core",
-    "icon": "Java",
-    "level": "Advanced",
-    "tag": "OOP & Frameworks"
-  },
-  {
-    "name": "JavaScript",
-    "category": "Languages & Core",
-    "icon": "JavaScript",
-    "level": "Advanced",
-    "tag": "ES6+ & Async"
-  },
-  {
-    "name": "TypeScript",
-    "category": "Languages & Core",
-    "icon": "TypeScript",
-    "level": "Advanced",
-    "tag": "Type-Safe Automation"
-  },
-  {
-    "name": "Bash & Shell",
-    "category": "Languages & Core",
-    "icon": "Bash",
-    "level": "Advanced",
-    "tag": "CLI & Scripting"
-  },
-  {
-    "name": "Python",
-    "category": "Languages & Core",
-    "icon": "Python",
-    "level": "Proficient",
-    "tag": "Automation & Scripts"
-  },
-  {
-    "name": "Node.js",
-    "category": "Languages & Core",
-    "icon": "Node",
-    "level": "Proficient",
-    "tag": "Backend & Tools"
-  },
-  {
-    "name": "React",
-    "category": "Web & Frontend",
-    "icon": "React",
-    "level": "Proficient",
-    "tag": "SPA & UI"
-  },
-  {
-    "name": "Git & GitHub",
+    "name": "Docker & Podman",
     "category": "DevOps & Cloud",
-    "icon": "Git",
+    "icon": "Docker",
     "level": "Advanced",
-    "tag": "Version Control"
+    "tag": "Mock Containers"
   },
   {
     "name": "CI/CD & Actions",
@@ -105,11 +98,11 @@
     "tag": "Pipelines"
   },
   {
-    "name": "Docker & Podman",
+    "name": "Git & GitHub",
     "category": "DevOps & Cloud",
-    "icon": "Docker",
+    "icon": "Git",
     "level": "Advanced",
-    "tag": "Mock Containers"
+    "tag": "Version Control"
   },
   {
     "name": "AWS",
@@ -133,6 +126,13 @@
     "tag": "Relational DB"
   },
   {
+    "name": "Linux",
+    "category": "Tools & Workflow",
+    "icon": "Linux",
+    "level": "Advanced",
+    "tag": "OS & CLI"
+  },
+  {
     "name": "Jira",
     "category": "Tools & Workflow",
     "icon": "Jira",
@@ -140,10 +140,10 @@
     "tag": "Agile & Triage"
   },
   {
-    "name": "Linux",
-    "category": "Tools & Workflow",
-    "icon": "Linux",
-    "level": "Advanced",
-    "tag": "OS & CLI"
+    "name": "React",
+    "category": "Web & Frontend",
+    "icon": "React",
+    "level": "Proficient",
+    "tag": "SPA & UI"
   }
 ]

@@ -9,8 +9,8 @@ export const Skills = () => {
 
   const categories = [
     "All",
-    "Automation & QA",
     "Languages & Core",
+    "Automation & QA",
     "DevOps & Cloud",
     "Databases",
     "Tools & Workflow",
@@ -29,6 +29,12 @@ export const Skills = () => {
   const INITIAL_COUNT = 8;
   const visibleSkills = isExpanded ? filteredSkills : filteredSkills.slice(0, INITIAL_COUNT);
   const canToggle = filteredSkills.length > INITIAL_COUNT;
+
+  const getLevelBadgeClass = (level) => {
+    if (level === "Advanced") return styles.levelAdvanced;
+    if (level === "Beginner") return styles.levelBeginner;
+    return styles.levelProficient;
+  };
 
   return (
     <section className={styles.skillsSection} id="skills">
@@ -68,7 +74,7 @@ export const Skills = () => {
               <div className={styles.skillDetails}>
                 <div className={styles.skillHeader}>
                   <h4 className={styles.skillName}>{skill.name}</h4>
-                  <span className={`${styles.levelBadge} ${skill.level === "Advanced" ? styles.levelAdvanced : styles.levelProficient}`}>
+                  <span className={`${styles.levelBadge} ${getLevelBadgeClass(skill.level)}`}>
                     {skill.level}
                   </span>
                 </div>
